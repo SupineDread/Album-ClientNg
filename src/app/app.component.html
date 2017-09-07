@@ -1,0 +1,21 @@
+<!--The whole content below can be removed with the new code.-->
+<header id="header">
+  <img src="../assets/images/angular.png" alt="Angular JS" id="logo">
+  <div class="title-subtitle">
+    <h1><a [routerLink]="['/']">{{title}}</a></h1>
+    <p>{{description}}</p>
+  </div>
+
+  <a class="btn-add-album" [routerLink]="['/crear-album']">
+    Crear album
+  </a>
+
+  <div class="clearfix"></div>
+</header>
+
+<section class="main">
+  <router-outlet></router-outlet>
+  <div class="clearfix"></div>
+</section>
+
+Hola mundo
